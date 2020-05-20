@@ -9,7 +9,6 @@ import FaceRecognition from './components/FaceRecognition/FaceRecognition';
 import Clarifai from 'clarifai';
 import SignIn from './components/SignIn/SignIn';
 import Register from './components/Register/Register';
-import Header from './components/Header/Header';
 import 'tachyons';
 
 
