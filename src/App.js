@@ -9,6 +9,7 @@ import FaceRecognition from './components/FaceRecognition/FaceRecognition';
 import Clarifai from 'clarifai';
 import SignIn from './components/SignIn/SignIn';
 import Register from './components/Register/Register';
+import Header from './components/Header/Header';
 import 'tachyons';
 
 
@@ -149,7 +150,10 @@ class App extends Component {
           :(
               this.state.route === 'Register'
           ? <Register loadUser={ this.loadUser } onRouteChange={ this.onRouteChange } />
-          : <SignIn loadUser={ this.loadUser } onRouteChange={ this.onRouteChange } />
+          : <div>
+            <Header />
+            <SignIn loadUser={ this.loadUser } onRouteChange={ this.onRouteChange } />
+            </div>
           )
         )
       }    
